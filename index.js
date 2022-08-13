@@ -1,12 +1,12 @@
 // chrome://extensions/
 
-let myLeads = []                                                // Saved Leads
-let oldLeads = []                                                // Old Leads
-const txtInput = document.getElementById("txt-input")           // Input field for saving leads
-const btnSave = document.getElementById("btn-save")             // Button to save current lead
-const btnTab = document.getElementById("btn-tab")             // Button to save current lead
-const btnDelete = document.getElementById("btn-delete")         // Button to delete all leads
-const ulLeads = document.getElementById("ul-leads")             // Unordered List displaying leads
+let myLeads = []                                                    // Saved Leads
+let oldLeads = []                                                   // Old Leads
+const txtInput = document.getElementById("txt-input")               // Input field for saving leads
+const btnSave = document.getElementById("btn-save")                 // Button to save current lead
+const btnTab = document.getElementById("btn-tab")                   // Button to save current lead
+const btnDelete = document.getElementById("btn-delete")             // Button to delete all leads
+const ulLeads = document.getElementById("ul-leads")                 // Unordered List displaying leads
 
 loadLeads()
 
@@ -64,7 +64,7 @@ btnTab.addEventListener("click", function() {
         localStorage.setItem("myLeads", JSON.stringify(myLeads))
     
         render(myLeads)
-        
+
     })
 
 })
